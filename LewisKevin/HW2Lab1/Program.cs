@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace HW2Lab1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World.");
-            Console.ReadKey();
         }
     }
 }
