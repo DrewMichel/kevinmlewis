@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HW2Lab1")]
+[assembly: AssemblyTitle("LewisMKevin")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("CTS")]
-[assembly: AssemblyProduct("HW2Lab1")]
-[assembly: AssemblyCopyright("Copyright © CTS 2016")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("LewisMKevin")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c23ae8a1-16d0-40bf-86f2-630fae601161")]
+[assembly: Guid("ec429608-6adb-404f-8fca-c6bfc505f8ba")]
 
 // Version information for an assembly consists of the following four values:
 //
