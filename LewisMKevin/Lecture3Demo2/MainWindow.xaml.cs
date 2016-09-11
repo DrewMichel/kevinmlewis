@@ -33,7 +33,7 @@ namespace Lecture3Demo2
             string lastName = nameTextBox.Text.Substring(spaceIndex + 1);
 
             //First letter change
-            char firstLetter = firstName[];
+            char firstLetter = firstName[0];
             //little trick for the lab, converts the char to a string, remember char's and strings are different. 
             string upperFirstLetter = firstLetter.ToString().ToUpper();
 
