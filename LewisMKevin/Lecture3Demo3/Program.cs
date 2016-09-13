@@ -18,7 +18,7 @@ namespace Lecture3Demo3
             int hours = Int32.Parse(hoursWorked);
             double wage = 0;
 
-            if (OVERTIME_HOURS < hours)
+            if (OVERTIME_HOURS <= hours)
             {
                 wage = (OVERTIME_HOURS * HOURLY_WAGE) + ((hours - OVERTIME_HOURS) * HOURLY_WAGE * 1.5);
             }
