@@ -8,9 +8,11 @@ namespace Lecture5Arrays
 {
     class Program
     {
+        public enum Flips { Heads, Tails};
+
         static void Main(string[] args)
         {
-            const int COIN_FLIPS = 8;
+            const int COIN_FLIPS = 10000;
 
             Random generator = new Random();
 
@@ -20,6 +22,7 @@ namespace Lecture5Arrays
 
             int[] array = new int[COIN_FLIPS];
 
+            #region business logic
             for (int x = 0; x < COIN_FLIPS; x++)
             {
                 array[x] = generator.Next(2);
@@ -34,12 +37,33 @@ namespace Lecture5Arrays
                 }
                 numberOfFlips++;
             }
+            #endregion
+
+            PrintOutput(array, numberOfHeads, numberOfTails);
+
+            Console.ReadKey();
+        }
+
+        static Flips CoinFlip(Random generator)
+        {
+            if (generator.Next(2) == 0)
+            {
+                return Flips.Heads;
+            }
+            else
+            {
+                return Flips.Tails;
+            }
+        }
+
+        static void PrintOutput(int[] flips, int heads, int tails)
+        {
 
             Console.WriteLine("Coin Flip History");
 
-            foreach(int element in array)
+            foreach (int element in flips)
             {
-                if(element == 0)
+                if (element == 0)
                 {
                     Console.WriteLine("Heads");
                 }
@@ -49,11 +73,9 @@ namespace Lecture5Arrays
                 }
             }
 
-            Console.WriteLine("Total Flips: {0}", numberOfFlips);
-            Console.WriteLine("Heads: {0}, Percentage: {1:P2}", numberOfHeads, numberOfHeads / (double)COIN_FLIPS);
-            Console.WriteLine("Tails: {0}, Percentage: {1:P2}", numberOfTails, numberOfTails / (double)COIN_FLIPS);
-
-            Console.ReadKey();
+            Console.WriteLine("Total Flips: {0}", flips.Length);
+            Console.WriteLine("Heads: {0}, Percentage: {1:P2}", heads, heads / (double)flips.Length);
+            Console.WriteLine("Tails: {0}, Percentage: {1:P2}", tails, tails / (double)flips.Length);
         }
     }
 }
