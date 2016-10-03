@@ -23,6 +23,10 @@ namespace Lecture6Input
         public MainWindow()
         {
             InitializeComponent();
+            operatorListBox.Items.Add("Test1");
+            operatorListBox.Items.Add("Test2");
+            operatorListBox.Items.Add("Test3");
+            operatorListBox.Items.Add("Test4");
         }
 
         private void checkButton_Click(object sender, RoutedEventArgs e)
@@ -31,7 +35,7 @@ namespace Lecture6Input
             try
             {
                 int value = Convert.ToInt32(numberTextBox.Text);
-                outputTextBox.Text = value.ToString();
+                outputTextBox.Text = value.ToString() + ":" + operatorListBox.SelectedItem;
             }
             catch (Exception exception)
             {
