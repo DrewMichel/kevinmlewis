@@ -16,6 +16,8 @@ namespace Lecture6Lab2
             fraction.setNumerator(10);
             fraction.setDenominator(30);
 
+            
+
             Console.WriteLine(
                 fraction.reduced());
 

@@ -65,5 +65,15 @@ namespace Lecture6Lab2
             }
             return factor;
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj != null && GetType() != obj.GetType())
+                return false;
+
+            Fraction f = (Fraction)obj;
+            return numerator == f.numerator && denominator == f.denominator;
+        }
+
     }
 }
