@@ -37,7 +37,7 @@ namespace Lecture6Input
                 int value = Convert.ToInt32(numberTextBox.Text);
                 outputTextBox.Text = value.ToString() + ":" + operatorListBox.SelectedItem;
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 MessageBox.Show("Invalid input");
                 numberTextBox.Text = "";

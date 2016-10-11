@@ -21,12 +21,12 @@ namespace Lecture6Try
                 }
 
             }
-            //catch(IndexOutOfRangeException e) //a specific exception
-            //{
-            //    Console.WriteLine("Something bad with the array probably happened." + e);
-            //}
             //this one must come after the specific ones. 
-            catch(Exception e) // this is the general exception
+            catch (IndexOutOfRangeException e) //a specific exception
+            {
+                Console.WriteLine("Something bad with the array probably happened." + e);
+            }
+            catch (Exception e) // this is the general exception
             {
                 Console.WriteLine("Something bad happened." + e);
             }
