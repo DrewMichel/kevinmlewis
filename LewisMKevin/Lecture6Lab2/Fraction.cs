@@ -8,8 +8,27 @@ namespace Lecture6Lab2
 {
     class Fraction
     {
-        int numerator;
-        int denominator;
+        private int numerator;
+        private int denominator;
+
+        //no-arg constructor
+        public Fraction()
+        {
+            this.numerator = 0;
+            this.denominator = 1;
+        }
+
+        public Fraction(int one) : this()
+        {
+            this.numerator = one;
+            setDenominator(one);
+        }
+
+        public Fraction(int numerator, int denominator) : this(numerator)
+        {
+            this.numerator = numerator;
+            setDenominator(denominator);
+        }
 
         public void setNumerator(int numerator)
         {
@@ -18,7 +37,11 @@ namespace Lecture6Lab2
 
         public void setDenominator(int denominator)
         {
-            this.denominator = denominator;
+            if (denominator != 0)
+            {
+                this.denominator = denominator;
+            }
+
         }
 
         public int getNumerator()
@@ -43,8 +66,7 @@ namespace Lecture6Lab2
 
         public string reduced()
         {
-            return String.Format("{0}/{1}", this.numerator / gcd(), this.denominator/gcd());
-        }
+            return String.Format("{0}/{1}", getRNum(), getRDem());       }
 
         public int gcd()
         {
@@ -68,11 +90,21 @@ namespace Lecture6Lab2
 
         public override bool Equals(object obj)
         {
-            if (obj != null && GetType() != obj.GetType())
+            if (obj == null && GetType() != obj.GetType())
                 return false;
 
             Fraction f = (Fraction)obj;
-            return numerator == f.numerator && denominator == f.denominator;
+            return value() == f.value();
+        }
+
+        private int getRNum()
+        {
+            return numerator / gcd();
+        }
+
+        private int getRDem()
+        {
+            return denominator / gcd();
         }
 
     }

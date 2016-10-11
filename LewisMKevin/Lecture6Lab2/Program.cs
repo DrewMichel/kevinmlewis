@@ -11,14 +11,18 @@ namespace Lecture6Lab2
         static void Main(string[] args)
         {
             Fraction fraction =
-                new Fraction();
+                new Fraction(10, 30);
 
-            fraction.setNumerator(10);
-            fraction.setDenominator(30);
+            Console.WriteLine(fraction.value());
 
-            
+            Fraction fraction2 = new Fraction();
+            fraction2.setNumerator(-3);
+            fraction2.setDenominator(-9);
 
-            Console.WriteLine(
+            Console.WriteLine(fraction.Equals(fraction2));
+
+            Console.WriteLine("Fraction: {0}",fraction);
+            Console.WriteLine("Reduced: {0}",
                 fraction.reduced());
 
             Console.ReadKey();
