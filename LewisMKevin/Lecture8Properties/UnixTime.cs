@@ -18,7 +18,14 @@ namespace Lecture8Properties
             set
             {
                 //value is a keyword inside the set block 
-                _seconds = value;
+                if (value > 0)
+                {
+                    _seconds = value;
+                }
+                else
+                {
+                    _seconds = 0;
+                }
             }
         }
 

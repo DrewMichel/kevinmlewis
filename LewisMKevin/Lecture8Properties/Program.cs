@@ -11,6 +11,8 @@ namespace Lecture8Properties
         static void Main(string[] args)
         {
             UnixTime time = new UnixTime();
+            time.Seconds = -84897498;
+            Console.WriteLine("Seconds: {0}", time.Seconds);
 
             time.Seconds = 11334243;
             Console.WriteLine("Seconds: {0}", time.Seconds);
