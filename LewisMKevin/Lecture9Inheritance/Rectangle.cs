@@ -8,8 +8,8 @@ namespace Lecture9Inheritance
 {
     class Rectangle : Polygon
     {
-        double Length { get; set; }
-        double Width { get; set; }
+        public double Length { get; set; }
+        public double Width { get; set; }
 
         public Rectangle(double length, double width) : base(4)
         {

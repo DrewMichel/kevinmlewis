@@ -40,6 +40,9 @@ namespace Lecture9List
             index = myList.IndexOf("Jumpy");
             Console.WriteLine("Index of Jumpy is {0}", index);
 
+            myList.Sort();
+            PrintList<string>(myList);
+
             Console.ReadKey();
         }
 
