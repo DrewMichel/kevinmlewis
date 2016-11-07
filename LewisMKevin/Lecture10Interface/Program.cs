@@ -10,6 +10,14 @@ namespace Lecture10Interface
     {
         static void Main(string[] args)
         {
+            IFileWriter[] fileWriters = new IFileWriter[2];
+            fileWriters[0] = new TextFileWriter();
+            fileWriters[1] = new RtfFileWriter();
+
+            foreach (IFileWriter filewriter in fileWriters)
+            {
+                filewriter.Write("path" + filewriter.Extension);
+            }
         }
     }
 }
