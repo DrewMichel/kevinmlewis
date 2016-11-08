@@ -18,6 +18,7 @@ namespace Lecture10PassByReference
             Console.WriteLine("After pass by value = {0}", value);
 
             PassByReference(ref value);
+            
             Console.WriteLine("After pass by reference = {0}", value);
 
             Console.ReadKey();
