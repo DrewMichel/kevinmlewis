@@ -1,0 +1,15 @@
+﻿<Window x:Class="TestApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="72,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto"><Run Text="TextBlockkljjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text="kjlkjkl"/><LineBreak/><Run/><LineBreak/><Run Text="khghkzdfgd"/><LineBreak/><Run Text="d"/><LineBreak/><Run Text="g"/><InlineUIContainer>
+                <ScrollBar x:Name="scrollBar" Height="100"/>
+            </InlineUIContainer><LineBreak/><Run Text="dgf"/><LineBreak/><Run Text="gdf"/><LineBreak/><Run Text="dgf"/><LineBreak/></TextBlock>
+
+    </Grid>
+</Window>
