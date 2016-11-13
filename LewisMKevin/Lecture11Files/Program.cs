@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lecture11Files
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            StreamWriter file = new StreamWriter("a.txt");
+
+            file.WriteLine("Hello");
+
+            Console.ReadKey();
+
+        }
+    }
+}
