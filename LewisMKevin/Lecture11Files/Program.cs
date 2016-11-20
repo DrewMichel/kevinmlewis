@@ -11,11 +11,14 @@ namespace Lecture11Files
     {
         static void Main(string[] args)
         {
-            StreamWriter file = new StreamWriter("a.txt");
-
-            file.WriteLine("Hello");
-
+            using (StreamWriter file = new StreamWriter("a.txt", true))
+            {
+                file.WriteLine("Hello CS 155");
+                file.WriteLine("Hello World");
+            }
             Console.ReadKey();
+
+
 
         }
     }

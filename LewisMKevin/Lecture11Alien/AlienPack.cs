@@ -47,6 +47,7 @@ namespace Lecture10Alien
         public void SortAliens()
         {
             aliens.Sort();
+            aliens.Reverse();
         }
 
     }
