@@ -19,10 +19,10 @@ namespace Lecture13Linq
             allPeople.Add(new Person("Emily", "Smith", 25, 70, 190));
             allPeople.Add(new Person("Frank", "Smith", 28, 70, 190));
             allPeople.Add(new Person("George", "Smith", 30, 70, 190));
-            allPeople.Add(new Person("Helga", "Smith", 56, 70, 190));
-            allPeople.Add(new Person("Irma", "Smith", 67, 70, 190));
-            allPeople.Add(new Person("Jason", "Smith", 78, 70, 190));
-            allPeople.Add(new Person("Kevin", "Smith", 88, 70, 190));
+            allPeople.Add(new Person("Helga", "Smith", 56, 30, 190));
+            allPeople.Add(new Person("Irma", "Smith", 67, 83, 190));
+            allPeople.Add(new Person("Jason", "Smith", 78, 57, 190));
+            allPeople.Add(new Person("Kevin", "Smith", 88, 58, 190));
             allPeople.Add(new Person("Laura", "Smith", 100, 70, 190));
 
             IEnumerable<Person> adults = from person in allPeople
@@ -36,6 +36,7 @@ namespace Lecture13Linq
 
             IEnumerable<Person> seniors = from person in allPeople
                                          where person.Age >= 55
+                                         where person.Weight == 190
                                          select person;
 
             foreach (Person senior in seniors)
@@ -44,7 +45,7 @@ namespace Lecture13Linq
             }
 
             seniors = from person in allPeople
-                      orderby person.Age descending
+                      orderby person.Height descending
                       where person.Age >= 55
                       select person;
 

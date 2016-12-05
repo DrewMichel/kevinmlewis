@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture13Indexers", "Lectur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture13Linq", "Lecture13Linq\Lecture13Linq.csproj", "{428960BA-2769-4387-B145-070CA548ECA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecture14NuGet", "Lecture14NuGet\Lecture14NuGet.csproj", "{982CC4D7-DC44-404D-A967-265FFF12AD6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +221,10 @@ Global
 		{428960BA-2769-4387-B145-070CA548ECA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{428960BA-2769-4387-B145-070CA548ECA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{428960BA-2769-4387-B145-070CA548ECA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{982CC4D7-DC44-404D-A967-265FFF12AD6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{982CC4D7-DC44-404D-A967-265FFF12AD6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{982CC4D7-DC44-404D-A967-265FFF12AD6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{982CC4D7-DC44-404D-A967-265FFF12AD6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

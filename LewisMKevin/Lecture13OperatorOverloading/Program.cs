@@ -19,6 +19,8 @@ namespace Lecture13OperatorOverloading
             Console.WriteLine("Vector B = {0}", b);
             Console.WriteLine("Vector result = {0}", result);
 
+            Console.WriteLine("Scalar: {0}", a * 5);
+
             Console.ReadKey();
         }
     }
